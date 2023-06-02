@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>CV Maker</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-  <h1>Curriculum Vitea<hr></h1>
+  <h1>Curriculum Vitea
+    <hr id="headHr">
+  </h1>
   <form id="myForm">
     <h2 type="text" id="heading2" name="heading2" required>Personal Information</h2>
     <label for="name">Name:</label>
@@ -17,17 +21,31 @@
     <input type="email" id="email" name="email" required>
 
     <label for="Address">Address:</label>
-    <input type="Address" id="Address" name="Address" required>
+    <input type="text" id="Address" name="Address" required>
+    
+    <h2 type="text" id="heading3" name="heading3" required>Education</h2>
+    <p>
+      <label for="uni">University</label>
+      <input type="text" id="uni" name="uni" required>
 
-    <label for="PhotoContainer">Upload your Photo</label>
-    <input type="file" id="PhotoContainer" name="PhotoContainer">
-   
+      <label for="graduationDate">Graduation Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+    </p>
+    <h2 type="text" id="heading3" name="heading3" required>Computer Skills</h2>
+    <p>
+      
+    </p>
+    
     <button type="button" id="printBtn">Print</button>
   </form>
-  
-  
+
+
   <div id="result"></div>
 
   <script src="script.js"></script>
 </body>
+
 </html>

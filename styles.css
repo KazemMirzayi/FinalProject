@@ -7,11 +7,18 @@ h1 {
   text-align: center;
 }
 
-hr {
+#headHr {
   border: 2px solid grey;
   border-radius: 5px;
   margin-left: 20%;
   margin-right: 20%;
+}
+hr {
+  border: 2px solid lightblue;
+  border-radius: 3px;
+  margin-left: 0;
+  margin-right: 50%;
+  margin-top: 10;
 }
 
 form {
@@ -49,15 +56,15 @@ button[type="button"] {
   margin-top: 20px;
   padding: 10px;
   border: 1px solid #ccc;
-  display: none; /* Hide the result initially */
+  display: none; 
 }
 
 @media print {
   form {
-    display: none; /* Hide the form during printing */
+    display: none; 
   }
 
   #result {
-    display: block; /* Show the result during printing */
+    display: block; 
   }
 }

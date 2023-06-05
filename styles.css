@@ -46,6 +46,7 @@ button[type="button"] {
 }
 
 #result {
+  display: block;
   font-family: system-ui;
   margin-top: 20px;
   padding: 10px;
@@ -53,12 +54,3 @@ button[type="button"] {
   display: none; 
 }
 
-@media print {
-  form {
-    display: none; 
-  }
-
-  #result {
-    display: block; 
-  }
-}

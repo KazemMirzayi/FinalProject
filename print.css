@@ -28,3 +28,6 @@ hr {
 div {
   margin-top: 10%;
 }
+#addForm {
+  display: none;
+}
